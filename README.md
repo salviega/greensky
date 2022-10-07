@@ -4,7 +4,7 @@ GreenSky: EthGlobal
 
 ### Vercel deploy
 
-Vercel url: xxx
+Vercel url: https://greensky.vercel.app/
 
 ## Quick start 🏄
 
