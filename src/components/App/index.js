@@ -1,6 +1,6 @@
 import "./App.scss";
 import React from "react";
-import { Route, Routes, Redirect, Navigate} from "react-router-dom";
+import { Route, Routes, Navigate} from "react-router-dom";
 import { ethers } from "ethers";
 import { useAuth } from "../../hooks/useAuth"
 import { GreenSkyMenu } from "../GreenSkyMenu"
