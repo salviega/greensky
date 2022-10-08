@@ -1,21 +1,25 @@
 import React from 'react';
-import { Navigate } from 'react-router-dom';
-import { useAuth } from '../../hooks/useAuth';
-import { GreenSkyBanner } from '../GreenSkyBanner';
 import './GreenSkyProtectedArea.scss'
-import banner from '../../asserts/images/banner-gray.png'
+import { Link, Navigate } from 'react-router-dom';
+import { useAuth } from '../../hooks/useAuth';
 
-export function GreenSkyProtectedArea() {
+export function GreenSkyProtectedArea({protectedArea}) {
   const auth = useAuth();
 
   if (auth.user.walletAddress === "Connect your wallet") {
     return <Navigate to="/" />;
   }
   return (
-    <div className='protected'>
-    <GreenSkyBanner banner={banner}/>
-    <h1 className='protected__title'>Subscribe</h1>
-    <p className='protected__description'>As the underlying technology develops, a growing pool of artists are selling verified, immutable works to art lovers and speculators, and the space as a whole is waking up to the power and potential of decentralized networks and currencies. With creators and collectors generating meaningful revenue through an entirely digital ecosystem, the tokenization of gifs, memes, and MP4s is emerging as the most exciting and relevant blockchain use case. From SuperRare to Josie to JOY, browse and trade NFTs from some of the world's top crypto artists on OpenSea.</p>
-  </div>
+    <div className="protected-area">
+      <figure >
+        <img src={protectedArea.imgbase64} alt="logo" />
+      </figure>
+      <div className="protected-area-description">
+        <p className="protected-area-description__title">{protectedArea.name}</p>
+      </div>
+        <div className="protected-area-description__show">
+          <Link to={`/monitoreo/${protectedArea.name}`}>Show</Link>
+        </div>
+    </div>
   )
 }
