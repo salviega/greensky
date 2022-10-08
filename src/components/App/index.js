@@ -1,10 +1,14 @@
 import "./App.scss";
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Redirect, Navigate} from "react-router-dom";
 import { ethers } from "ethers";
 import { useAuth } from "../../hooks/useAuth"
 import { GreenSkyMenu } from "../GreenSkyMenu"
 import { GreenSkyWallet } from "../GreenSkyWallet"
+import { GreenSkyHome } from '../GreenSkyHome';
+import { GreenSkyMonitoreo } from '../GreenSkyMonitoreo';
+import { GreenSkyProtectedArea } from '../GreenSkyProtectedArea';
+import { GreenSkySubscribe } from '../GreenSkySubscribe'
 import { GreenSkyFooter } from '../GreenSkyFooter';
 
 function App() {
@@ -36,7 +40,17 @@ function App() {
       <GreenSkyMenu>
         <GreenSkyWallet />
       </GreenSkyMenu>
-      <main></main>
+      <main>
+        <div className="main__container">
+          <Routes>
+            <Route path="/" element={<GreenSkyHome />} />
+            <Route path="/monitoreo" element={<GreenSkyMonitoreo />} />
+            <Route path="/monitoreo/:slug" element={<GreenSkyProtectedArea/>} />
+            <Route path="/subcribe" element={<GreenSkySubscribe />} />
+            <Route path="*" element={<Navigate replace to="/home" />} />
+          </Routes>
+        </div>
+      </main>
       <GreenSkyFooter />
     </div>
   );
