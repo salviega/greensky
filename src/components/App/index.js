@@ -46,7 +46,7 @@ function App() {
             <Route path="/" element={<GreenSkyHome />} />
             <Route path="/monitoreo" element={<GreenSkyMonitoreo />} />
             <Route path="/monitoreo/:slug" element={<GreenSkyProtectedArea/>} />
-            <Route path="/subcribe" element={<GreenSkySubscribe />} />
+            <Route path="/subscribe" element={<GreenSkySubscribe />} />
             <Route path="*" element={<Navigate replace to="/home" />} />
           </Routes>
         </div>

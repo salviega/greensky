@@ -22,18 +22,28 @@ export function GreenSkyMenu(props) {
           <div className="main-nav-right">
             {privateRoutes &&
             auth.user.walletAddress === "Connect your wallet" ? null : (
-              <li
-                className="main-nav-right__item"
-              >
-                <NavLink
-                  className={({ isActive }) => {
-                    return isActive ? "main-nav-right__item--active" : "";
-                  }}
-                  to={"/monitoreo"}
-                >
-                  {"Protectd Natural Areas"}
-                </NavLink>
-              </li>
+              <React.Fragment>
+                <li className="main-nav-right__item">
+                  <NavLink
+                    className={({ isActive }) => {
+                      return isActive ? "main-nav-right__item--active" : "";
+                    }}
+                    to={"/monitoreo"}
+                  >
+                    {"Protectd Natural Areas"}
+                  </NavLink>
+                </li>
+                <li className="main-nav-right__item">
+                  <NavLink
+                    className={({ isActive }) => {
+                      return isActive ? "main-nav-right__item--active" : "";
+                    }}
+                    to={"/subscribe"}
+                  >
+                    {"Subscribe"}
+                  </NavLink>
+                </li>
+              </React.Fragment>
             )}
           </div>
           <li className="main-nav-right__button">{props.children}</li>

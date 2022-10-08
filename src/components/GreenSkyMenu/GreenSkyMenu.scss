@@ -39,6 +39,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: right;
+        column-gap: 8px;
 
         &__item {
           font-style: normal;
