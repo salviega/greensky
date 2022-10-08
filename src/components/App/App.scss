@@ -1,0 +1,17 @@
+.app__wrapper {
+  position: relative;
+  min-height: 48.3vw;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-bottom:24px;
+  width: 100%;
+  .main__container {
+    align-items: center;
+    justify-content: center;
+  }
+}

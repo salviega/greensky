@@ -1,0 +1,43 @@
+import "./App.scss";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import { ethers } from "ethers";
+import { useAuth } from "../../hooks/useAuth"
+import { GreenSkyMenu } from "../GreenSkyMenu"
+import { GreenSkyWallet } from "../GreenSkyWallet"
+
+function App() {
+  const auth = useAuth();
+
+  React.useEffect(() => {
+    const currentNetwork = async () => {
+      const web3Provider = new ethers.providers.Web3Provider(window.ethereum);
+      const web3Signer = web3Provider.getSigner();
+      const chainId = await web3Signer.getChainId();
+      return chainId;
+    };
+    if (window.ethereum) {
+      window.ethereum.on("chainChanged", () => {
+        currentNetwork().then((response) => {
+          if (response !== 5) {
+            auth.logout();
+          }
+        });
+      });
+      window.ethereum.on("accountsChanged", () => {
+        auth.logout();
+      });
+    }
+  });
+
+  return (
+    <div className="app__wrapper">
+    <GreenSkyMenu>
+      <GreenSkyWallet />
+    </GreenSkyMenu>
+    <main></main>
+    </div>
+  );
+}
+
+export default App;
