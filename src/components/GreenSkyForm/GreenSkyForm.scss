@@ -11,7 +11,7 @@
     margin: 30px 0;
     width: 100%;
     height: max-content;
-    
+
     &__title {
       padding: 0px 1rem;
       margin: 0;
@@ -38,39 +38,41 @@
         }
 
         &__head {
+          width: max-content;
           display: flex;
           flex-direction: column;
           justify-content: center;
-          width: max-content;
 
           p {
             max-width: max-content;
+
           }
         }
 
         &__upload {
-          display: flex;
-          align-content: center;
           margin: 0;
+          margin-bottom: 16px;
           padding: 0;
-          padding: 0.5rem 0;
-          width: 90%;
-  
+          width: max-content;
+          height: 38px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
           button {
             cursor: pointer;
-            display: inline-block;
-            text-decoration: none;
-            background: #fff;
-            border: 2px solid #69a6ce;
-            color: #69a6ce;
-            padding: 10px 25px;
-            border-radius: 25px;
+            background: #808080;
+            border-radius: 150px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 36px;
+            color: #ffffff;
             transition: all 0.27s ease;
-            max-width: max-content;
-  
+
             &:hover {
-              color: #fff;
-              background-color: lighten(#69a6ce, 15%);
+              color: #ffffff;
+              background-color: #9ecbf5;
             }
           }
         }
@@ -127,30 +129,29 @@
       }
 
       &__create {
-        position: relative;
-        padding: 0px 1rem;
-        bottom: 0%;
-        display: flex;
-        align-content: center;
         margin: 0;
+        margin-bottom: 16px;
         padding: 0;
-        width: 90%;
+        width: 133px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         button {
           cursor: pointer;
-          display: inline-block;
-          text-decoration: none;
-          background: #fff;
-          border: 2px solid #69a6ce;
-          color: #69a6ce;
-          padding: 10px 25px;
-          border-radius: 25px;
+          background: #808080;
+          border-radius: 150px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 36px;
+          color: #ffffff;
           transition: all 0.27s ease;
-          max-width: max-content;
 
           &:hover {
-            color: #fff;
-            background-color: lighten(#69a6ce, 15%);
+            color: #ffffff;
+            background-color: #9ecbf5;
           }
         }
       }

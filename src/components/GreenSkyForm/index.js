@@ -82,7 +82,7 @@ export function GreenSkyForm() {
                       <p>{"(Max Size: 2 MB | *.jpg, *.jpeg, *.png)"}</p>
                     </div>
                   </div>
-                  <p>
+                  <p style={{marginBottom: '1rem'}}>
                     People can try to notify you of problems in your submission
                     and save your deposit via your ethmail.cc. Make sure to
                     check it while submission is being processed.
