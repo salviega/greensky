@@ -1,8 +1,11 @@
 header {
+  height: 150px;
+  width: 98%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150px;
+  border-bottom: 2px solid #808080;
+
 
   nav {
     .main-nav {
@@ -51,15 +54,22 @@ header {
             text-decoration: none;
           }
 
+          &:hover {
+            width: max-content;
+            border: 1.5px solid #9ecbf5;
+            border-bottom: 2px solid #9ecbf5;
+            outline: 0.1px solid #9ecbf5;
+          }
+
           &--active {
-            border-bottom: 5px solid #ff3c82;
+            border-bottom: 5px solid #9ecbf5;;
           }
         }
 
         &__button {
           max-width: max-content;
           padding-right: 31px;
-          padding-left: 65px;
+          padding-left: 15px;
           button {
             max-width: max-content;
           }

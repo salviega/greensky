@@ -5,6 +5,7 @@ import { ethers } from "ethers";
 import { useAuth } from "../../hooks/useAuth"
 import { GreenSkyMenu } from "../GreenSkyMenu"
 import { GreenSkyWallet } from "../GreenSkyWallet"
+import { GreenSkyFooter } from '../GreenSkyFooter';
 
 function App() {
   const auth = useAuth();
@@ -32,10 +33,11 @@ function App() {
 
   return (
     <div className="app__wrapper">
-    <GreenSkyMenu>
-      <GreenSkyWallet />
-    </GreenSkyMenu>
-    <main></main>
+      <GreenSkyMenu>
+        <GreenSkyWallet />
+      </GreenSkyMenu>
+      <main></main>
+      <GreenSkyFooter />
     </div>
   );
 }
