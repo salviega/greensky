@@ -4,6 +4,7 @@ import protectedAreasList from "../../asserts/json/harcoredData.json";
 import { Navigate, useParams } from "react-router-dom";
 import { useAuth } from "../../hooks/useAuth";
 import { GreenSkyResumen } from '../GreenSkyResumen';
+import { GreenSkyProtectedAreaStatistics } from '../GreenSkyProtectedAreaStadistic';
 
 export function GreenSkyProtectedAreaDetails() {
   const auth = useAuth();
@@ -49,6 +50,7 @@ export function GreenSkyProtectedAreaDetails() {
           </p>
         </div>
         <GreenSkyResumen protectedArea={protectedArea} />
+        <GreenSkyProtectedAreaStatistics data={protectedArea.mean} labels={"NDVI"}/>
     </div>
   );
 }
