@@ -10,6 +10,7 @@ import { GreenSkyMonitoreo } from '../GreenSkyMonitoreo';
 import { GreenSkyProtectedArea } from '../GreenSkyProtectedArea';
 import { GreenSkySubscribe } from '../GreenSkySubscribe'
 import { GreenSkyFooter } from '../GreenSkyFooter';
+import { GreenSkyProtectedAreaDetails } from '../GreenSkyProtectedAreaDetails';
 
 function App() {
   const auth = useAuth();
@@ -45,7 +46,7 @@ function App() {
           <Routes>
             <Route path="/" element={<GreenSkyHome />} />
             <Route path="/monitoreo" element={<GreenSkyMonitoreo />} />
-            <Route path="/monitoreo/:slug" element={<GreenSkyProtectedArea/>} />
+            <Route path="/monitoreo/:slug" element={<GreenSkyProtectedAreaDetails/>} />
             <Route path="/subscribe" element={<GreenSkySubscribe />} />
             <Route path="*" element={<Navigate replace to="/" />} />
           </Routes>

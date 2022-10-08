@@ -4,12 +4,11 @@
     "name": "Parque nacional natural Yaigojé Apaporis",
     "imgbase64": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.miteco.gob.es%2Fca%2Fred-parques-nacionales%2Fnuestros-parques%2Fpicos-europa%2FmapaParque_tcm34-70900.gif&f=1&nofb=1&ipt=f34912c304bf30ea5441b6d2df56ed10ebaf86170cf055262b27d12a14024a63&ipo=images",
     "timestamp": "1231231321564",
-    "sqr": "300",
     "lat": "-45",
     "log": "4",
     "min": "1,",
-    "max":" 1",
-    "mean":" 4.",
+    "max": " 1",
+    "mean": " 4.",
     "sd": "5"
   },
   {
@@ -17,12 +16,11 @@
     "name": "Parque nacional natural Catatumbo Barí",
     "imgbase64": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.miteco.gob.es%2Fes%2Fred-parques-nacionales%2Fnuestros-parques%2Fmonfrague%2FmapaParque_tcm30-66693.gif&f=1&nofb=1&ipt=2001d03c8ca5b03ff136fc4e0d1b270b006d81f3a5afb06986a5e878621769ed&ipo=images",
     "timestamp": "1231231321564",
-    "sqr": "300",
     "lat": "-45",
     "log": "4",
     "min": "1,",
-    "max":" 1",
-    "mean":" 4.",
+    "max": " 1",
+    "mean": " 4.",
     "sd": "5"
   },
   {
@@ -30,12 +28,11 @@
     "name": "Parque Nacional Natural Cueva de los Guácharos",
     "imgbase64": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F_O_-nLcN3DLg%2FSeUt7nT6BDI%2FAAAAAAAAAWo%2FfCfVX0ipsWU%2Fs320%2FGUACHARO.gif&f=1&nofb=1&ipt=b93adad00c70eb984c2f9fb3fa36e8b0ccfe521a61c8cc6c9b903eedea0c2ae4&ipo=images",
     "timestamp": "1231231321564",
-    "sqr": "300",
     "lat": "-45",
     "log": "4",
     "min": "1,",
-    "max":" 1",
-    "mean":" 4.",
+    "max": " 1",
+    "mean": " 4.",
     "sd": "5"
   },
   {
@@ -43,12 +40,11 @@
     "name": "Parque Nacional Natural Tayrona",
     "imgbase64": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-Scg3elI_mQI%2FUL0N-3wRybI%2FAAAAAAAAB20%2FTRhthYC3xwE%2Fs1600%2Fmapa.jpg&f=1&nofb=1&ipt=f1ac6d7082694dbcb36f58149876de9f5730b1b22f6ab60c264c7b11289f0ff2&ipo=images",
     "timestamp": "1231231321564",
-    "sqr": "300",
     "lat": "-45",
     "log": "4",
     "min": "1,",
-    "max":" 1",
-    "mean":" 4.",
+    "max": " 1",
+    "mean": " 4.",
     "sd": "5"
   },
   {
@@ -56,12 +52,11 @@
     "name": "Parque Nacional Natural Tinigua",
     "imgbase64": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.3rZpnXdlUBYleTEm7OUJWAHaJK%26pid%3DApi&f=1&ipt=02b1f4271ec048249996c9bf7edbbafd254b56ad72a48c422d71a6a1baf3542d&ipo=images",
     "timestamp": "1231231321564",
-    "sqr": "300",
     "lat": "-45",
     "log": "4",
     "min": "1,",
-    "max":" 1",
-    "mean":" 4.",
+    "max": " 1",
+    "mean": " 4.",
     "sd": "5"
   },
   {
@@ -69,12 +64,11 @@
     "name": "Parque Nacional Natural Farallones de Cali",
     "imgbase64": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-OU29r_hebIE%2FTrcdD3iGSzI%2FAAAAAAAAAAs%2FAXfoYrY0HAo%2Fs1600%2FCO031.jpg&f=1&nofb=1&ipt=d75f42d15c6c2e1eb3ca8290fd48ff5fb405544a317d9b894a3264ff45fec9d1&ipo=images",
     "timestamp": "1231231321564",
-    "sqr": "300",
     "lat": "-45",
     "log": "4",
     "min": "1,",
-    "max":" 1",
-    "mean":" 4.",
+    "max": " 1",
+    "mean": " 4.",
     "sd": "5"
   }
 ]

@@ -1,5 +1,6 @@
 .protected-areas {
   margin-bottom: 24px;
+  height: max-content;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
