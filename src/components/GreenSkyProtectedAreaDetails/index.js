@@ -30,7 +30,6 @@ export function GreenSkyProtectedAreaDetails() {
 
   return (
     <div className="details-container">
-      <div className="details-container__cancel"></div>
       <div className="details-container__back">
         <button onClick={() => navigate("/monitoreo")}>Back</button>
       </div>
