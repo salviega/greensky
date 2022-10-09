@@ -9,7 +9,7 @@ import banner from '../../asserts/images/banner-gray.png'
 export function GreenSkySubscribe() {
   const auth = useAuth();
 
-  if (auth.user.walletAddress === "Connect your wallet") {
+  if (auth.user.walletAddress === "CONNECT WALLET") {
     return <Navigate to="/" />;
   }
   return (

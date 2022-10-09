@@ -1,5 +1,5 @@
 import "./GreenSkyMenu.scss";
-import logo from "../../asserts/images/green-sky-logo.jpg";
+import logo from "../../asserts/images/logo-skywood.svg";
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useAuth } from "../../hooks/useAuth";
@@ -21,7 +21,7 @@ export function GreenSkyMenu(props) {
           </li>
           <div className="main-nav-right">
             {privateRoutes &&
-            auth.user.walletAddress === "Connect your wallet" ? null : (
+            auth.user.walletAddress === "CONNECT WALLET" ? null : (
               <React.Fragment>
                 <li className="main-nav-right__item">
                   <NavLink
@@ -30,7 +30,7 @@ export function GreenSkyMenu(props) {
                     }}
                     to={"/monitoreo"}
                   >
-                    {"Protectd Natural Areas"}
+                    {"Protected Natural Areas"}
                   </NavLink>
                 </li>
                 <li className="main-nav-right__item">

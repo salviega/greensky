@@ -7,7 +7,6 @@ import { GreenSkyMenu } from "../GreenSkyMenu"
 import { GreenSkyWallet } from "../GreenSkyWallet"
 import { GreenSkyHome } from '../GreenSkyHome';
 import { GreenSkyMonitoreo } from '../GreenSkyMonitoreo';
-import { GreenSkyProtectedArea } from '../GreenSkyProtectedArea';
 import { GreenSkySubscribe } from '../GreenSkySubscribe'
 import { GreenSkyFooter } from '../GreenSkyFooter';
 import { GreenSkyProtectedAreaDetails } from '../GreenSkyProtectedAreaDetails';

@@ -15,10 +15,9 @@ module.exports = {
     artifacts: './src/blockchain/hardhat/artifacts'
   },
   etherscan: {
-    apiKey: {
-      goerli: process.env.ETHERSCAN_API_KEY
-    }
+    apiKey: process.env.POLYGONSCAN_API_KEY
   },
+
   defaultNetwork: 'hardhat',
   networks: {
     hardhat: {
@@ -33,6 +32,10 @@ module.exports = {
       url: process.env.GOERLI_RPC_URL,
       accounts: [process.env.PRIVATE_KEY],
       saveDeployments: true
+    },
+    matic: {
+      url: "https://rpc-mumbai.maticvigil.com",
+      accounts: [process.env.PRIVATE_KEY]
     }
   },
   solidity: '0.8.15'

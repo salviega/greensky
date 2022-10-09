@@ -13,7 +13,7 @@ export function GreenSkyWallet() {
       return
     }
 
-    if (auth.user.walletAddress === 'Connect your wallet') {
+    if (auth.user.walletAddress === 'CONNECT WALLET') {
       setLoading(true)
       const web3Provider = new ethers.providers.Web3Provider(window.ethereum)
       await web3Provider.send('eth_requestAccounts', [])
@@ -39,7 +39,7 @@ export function GreenSkyWallet() {
 
   return (
     <button className='button-wallet' onClick={connectWallet}>
-      {loading ? 'loading...' : auth.user.walletAddress !== 'Connect your wallet' ? '...' + String(auth.user.walletAddress).slice(36) : 'Connect your wallet'}
+      {loading ? 'loading...' : auth.user.walletAddress !== 'CONNECT WALLET' ? '...' + String(auth.user.walletAddress).slice(36) : 'CONNECT WALLET'}
     </button>
   )
 }

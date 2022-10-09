@@ -8,7 +8,7 @@ const AuthContext = React.createContext();
 export function AuthProvider({ children }) {
   const navigate = useNavigate();
 
-  const initialState = JSON.parse(localStorage.getItem('wallet')) || {walletAddress: 'Connect your wallet'}
+  const initialState = JSON.parse(localStorage.getItem('wallet')) || {walletAddress: 'CONNECT WALLET'}
   const [user, setUser] = React.useState(initialState);
 
   const login = ({ walletAddress }) => {
@@ -29,7 +29,7 @@ export function AuthProvider({ children }) {
 
   const logout = () => {
     localStorage.clear()
-    setUser({ walletAddress: "Connect your wallet" });
+    setUser({ walletAddress: "CONNECT WALLET" });
     navigate("/");
   };
 
@@ -41,7 +41,7 @@ export function AuthProvider({ children }) {
 export function AuthRoute(props) {
   const auth = useAuth();
 
-  if (auth.user.walletAddress === "Connect your wallet") {
+  if (auth.user.walletAddress === "CONNECT WALLET") {
     return <Navigate to="/" />;
   }
 

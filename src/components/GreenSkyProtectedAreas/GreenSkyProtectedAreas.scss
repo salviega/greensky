@@ -1,6 +1,7 @@
 .protected-areas {
-  margin-bottom: 24px;
-  height: max-content;
+  margin: 0px;
+  margin-bottom: 84px;
+  padding: 0px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
@@ -10,10 +11,11 @@
 // tablets
 @media screen and (min-width: 40em) and (max-width: 63.9em) {
   .protected-areas {
-    margin-bottom: 24px;
+    margin: 0px;
+    margin-bottom: 84px;
+    padding: 0px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px;
     align-items: center;
     justify-items: center;
   }
@@ -22,10 +24,11 @@
 //web
 @media screen and (min-width: 64em) {
   .protected-areas {
-    margin-bottom: 24px;
+    margin: 0px;
+    margin-bottom: 84px;
+    padding: 0px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
   }

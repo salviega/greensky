@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./GreenSkyProtectedAreaDetails.scss";
 import protectedAreasList from "../../asserts/json/harcoredData.json";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
@@ -12,12 +12,19 @@ export function GreenSkyProtectedAreaDetails() {
   const { slug } = useParams();
   const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState(false);
+  const [html, setHtml] = React.useState("");
+
+  useEffect(() => {
+    fetch("/file.html")
+      .then((res) => res.text())
+      .then((text) => {setHtml(text)});
+  }, []);
 
   const protectedArea = protectedAreasList.find(
     (protectedArea) => protectedArea.id === slug
   );
 
-  if (auth.user.walletAddress === "Connect your wallet" && protectedArea) {
+  if (auth.user.walletAddress === "CONNECT WALLET" && protectedArea) {
     return <Navigate to="/" />;
   }
 
@@ -25,7 +32,7 @@ export function GreenSkyProtectedAreaDetails() {
     <div className="details-container">
       <div className="details-container__cancel"></div>
       <div className="details-container__back">
-        <button onClick={() => navigate('/monitoreo')}>Back</button>
+        <button onClick={() => navigate("/monitoreo")}>Back</button>
       </div>
       <div className="details-container-head">
         <p className="details-container-head__title">
@@ -53,6 +60,7 @@ export function GreenSkyProtectedAreaDetails() {
         data={protectedArea.mean}
         labels={"NDVI"}
       />
+      {html && <iframe srcdoc={html}></iframe>}
     </div>
   );
 }

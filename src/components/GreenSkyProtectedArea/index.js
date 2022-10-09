@@ -13,7 +13,7 @@ export function GreenSkyProtectedArea({protectedArea}) {
         <p className="protected-area-description__title">{protectedArea.name}</p>
       </div>
         <div className="protected-area-description__show">
-          <Link to={`/monitoreo/${protectedArea.id}`}><button>Show</button></Link>
+          <Link to={`/monitoreo/${protectedArea.id}`}><button>SHOW</button></Link>
         </div>
     </div>
   )
