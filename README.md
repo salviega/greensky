@@ -2,6 +2,10 @@
 
 GreenSky: EthGlobal
 
+### NDVI API
+
+https://oriojas.pythonanywhere.com/html_name/Apaporis_2018.json
+
 ### Vercel deploy
 
 Vercel url: https://greensky.vercel.app/
