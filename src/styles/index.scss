@@ -4,19 +4,13 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  outline: none;
-  width: 100%;
-}
-html,
-body {
-  background: #FFFFFF;
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
 }
 
-body {
+html {
   font-family:"ff-real-headline-pro";
+  font-size: 62.5%;
+  background: #FFFFFF;
 }
-

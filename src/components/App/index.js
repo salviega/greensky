@@ -36,12 +36,11 @@ function App() {
   });
 
   return (
-    <div className="app__wrapper">
+    <React.Fragment>
       <GreenSkyMenu>
         <GreenSkyWallet />
       </GreenSkyMenu>
       <main>
-        <div className="main__container">
           <Routes>
             <Route path="/" element={<GreenSkyHome />} />
             <Route path="/monitoreo" element={<GreenSkyMonitoreo />} />
@@ -49,10 +48,9 @@ function App() {
             <Route path="/subscribe" element={<GreenSkySubscribe />} />
             <Route path="*" element={<Navigate replace to="/" />} />
           </Routes>
-        </div>
       </main>
       <GreenSkyFooter />
-    </div>
+    </React.Fragment>
   );
 }
 
